@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: bold;
+  text-align: center;
+}
+
+#header {
+  background-color: Blue;
+  padding: 20px;
+}
+
+
+#nav a {
+ 
+  flex: 1 1 auto;
+  text-decoration: none;
+  color: black;
+}
+#nav {
+  background: white;
+  padding: 20px;
+}
+
+#article {
+  text-align: left;
+  background: gold;
+  padding: 20px;
+  display: flex;
+}
+
+#aside {
+  background-color: silver;
+  padding: 20px;
+}
+
+#footer {
+  background: fuchsia;
+  padding: 30px;
+}
+
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: auto;
+  }
+  #main {
+    display: flex;
+  }
+  #nav,
+  #header {
+    order: -1;
+  }
+  #article {
+    flex: 1 1 80%;
+  }
+  #aside {
+    flex: 1 1 20%;
+  }
+}
