@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <link href="stilus.css" rel="stylesheet">
-    <script src="hetedik.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title></title>
+    <link href="stilus.css" rel="stylesheet">
+    <script src="tizedik.js"></script>   
 </head>
 <body>
     <div id="kulso">
@@ -14,17 +15,17 @@
 
         <div id="kozepso">
             <div id="valaszok">
-                <div id="valasz1" class="kerdes kattinthato">Válasz 1</div>
-                <div id="valasz2" class="kerdes kattinthato jo">Válasz 2</div>
-                <div id="valasz3" class="kerdes kattinthato rossz">Válasz 3</div>
+                <div id="valasz1" onclick="valasztas(1)" class="kerdes kattinthato">Válasz 1</div>
+                <div id="valasz2" onclick="valasztas(2)" class="kerdes kattinthato">Válasz 2</div>
+                <div id="valasz3" onclick="valasztas(3)" class="kerdes kattinthato">Válasz 3</div>
             </div>
             <div id="kep">
                 <img id="kep1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
             </div>
         </div>
         <div id="vezerlo">
-            <div class="gomb kattinthato">Vissza</div>
-            <div class="gomb kattinthato">Elore</div>
+            <div id="vissza" class="gomb kattinthato">Vissza</div>
+            <div id="elore" class="gomb kattinthato">Elore</div>
         </div>
     </div>
     
